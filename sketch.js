@@ -58,7 +58,6 @@ async function predict() {
 
   // Change the body's background color based on the highest prediction
   document.body.style.backgroundColor = getColorForClass(highestPrediction.className);
-  console.log(getColorForClass(highestPrediction.className));
 }
 
 // Function to map class names to colors
@@ -78,3 +77,5 @@ function getColorForClass(className) {
       return "white";
   }
 }
+
+document.addEventListener("DOMContentLoaded", init);
